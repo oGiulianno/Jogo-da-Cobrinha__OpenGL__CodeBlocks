@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1572396707 source:c:\giu\ciência da computação\jogo_cobra\cobra\main.cpp
+	<GL/glut.h>
+	<GL/freeglut.h>
+	<math.h>
+	"windows.h"
+	<iostream>
+	<utility>
+	<stdlib.h>
+	<time.h>
+	<list>
+	<sstream>
+	<ctime>
+
+1368290960 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+	"freeglut_std.h"
+
+1368290960 c:\program files (x86)\codeblocks\mingw\include\gl\freeglut_std.h
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1368290960 c:\program files (x86)\codeblocks\mingw\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1368290960 c:\program files (x86)\codeblocks\mingw\include\gl\freeglut_ext.h
+	<stdarg.h>
+
