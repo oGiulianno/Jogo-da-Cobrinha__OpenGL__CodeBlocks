@@ -1,4 +1,4 @@
-Jogo da Corinha  <br> <br>
+Jogo da Cobrinha  <br> <br>
 
 Os controles de jogo padrões são - W,S,A,D <br>
 A cada 5 comidas que a comida comer a velocidade irá aumentar <br>
