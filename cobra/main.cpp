@@ -1,6 +1,6 @@
 /************************************************/
 //
-//	Exercicio de ComputaÁ„o gr·fica
+//	Exercicio de Computa√ß√£o gr√°fica
 //
 //	Programa Joguinho da Cobra
 //
@@ -15,21 +15,21 @@
 //
 //	Programa usado: Code Blocks
 //	Bibliotecas usadas - GLUT, FREEGLUT e MinGW
-//  Guia de instalaÁ„o - http://wiki.codeblocks.org/index.php/Using_FreeGlut_with_Code::Blocks
+//  Guia de instala√ß√£o - http://wiki.codeblocks.org/index.php/Using_FreeGlut_with_Code::Blocks
 //
 //	A como inicia com o tamanho 3
 //	A comida inicia junto com a cobra na tela
-//	A tela n„o pode ser modificade por causa da funÁ„o Corige_Tela()
-//	Os controles de jogo padrıes s„o - W,S,A,D
-//	A cada 5 comidas que a comida comer a velocidade ir· aumentar
-//	A funÁ„o nova comida ir· criar uma nova comida aleatÛriamente
-//	Ao fim do jogo o usu·rio ir· receber um aviso de fim de jogo junto com a sua pontuaÁ„o
+//	A tela n√£o pode ser modificade por causa da fun√ß√£o Corige_Tela()
+//	Os controles de jogo padr√µes s√£o - W,S,A,D
+//	A cada 5 comidas que a cobrinha comer a velocidade ir√° aumentar
+//	A fun√ß√£o nova comida ir√° criar uma nova comida aleat√≥riamente
+//	Ao fim do jogo o usu√°rio ir√° receber um aviso de fim de jogo junto com a sua pontua√ß√£o
 //  Fim de jogo - Caso a cobra bater em alguma lateral ou em seu proprio corpo
 //
 //-----------------------------------------------
 //
 //Professor: Gustavo Vinhal
-//			 ComputaÁ„o Gr·fica
+//			 Computa√ß√£o Gr√°fica
 //
 /************************************************/
 
@@ -520,18 +520,18 @@ void Iniciar_Jogo(void)
 /***************************************************/
 void Corrige_Tela(GLsizei w, GLsizei h)
 {
-    // N„o permitir que a tela seja modificada
+    // N√£o permitir que a tela seja modificada
     if(w < 800 || w> 800) glutReshapeWindow(800, h);
     if(h < 600 || h> 600) glutReshapeWindow(w, 600);
 
 	// Evita a divisao por zero
 	if(h == 0) h = 1;
-	// Especifica as dimensıes da Viewport
+	// Especifica as dimens√µes da Viewport
 	glViewport(0, 0, w, h);
 	// Inicializa o sistema de coordenadas
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	// Estabelece a janela de seleÁ„o (left, right, bottom, top)
+	// Estabelece a janela de sele√ß√£o (left, right, bottom, top)
 	if (w <= h)
         gluOrtho2D (0.0f, 250.0f, 0.0f, 250.0f*h/w);
    else
